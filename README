@@ -1,0 +1,10 @@
+# pssh
+Простая программка на Clojure для параллельного запуска ssh-команды на нескольких машинах
+
+Для сборки:
+LEIN_SNAPSHOTS_IN_RELEASE=yes lein uberjar
+
+Для запуска:
+java -jar pssh-0.1-standalone.jar -t 600 -s 6003,6004 "/home/apparat/hw save"
+или
+java -jar pssh-0.1-standalone.jar -t 600 -s kurilkina /home/apparat/update_run
